@@ -1,29 +1,8 @@
-var playerInfo = {
-  name: window.prompt("What is your robot's name?"),
-  health: 100,
-  attack: 10,
-  money: 10
-};
 
-var enemyInfo = [
-  {
-    name: "Roborto",
-    attack: 12
-  },
-  {
-    name: "Amy Android",
-    attack: 13
-  },
-  {
-    name: "Robo Trumble",
-    attack: 14
-  }
-];
-
-console.log();
-console.log(enemyInfo.length);
-console.log([0]);
-console.log([3]);
+// console.log();
+// console.log(enemyInfo.length);
+// console.log([0]);
+// console.log([3]);
 
 // function to generate a random numeric value
 var randomNumber = function(min, max) {
@@ -212,6 +191,28 @@ var shop = function() {
       break;
   }
 };
+
+var playerInfo = {
+  name: window.prompt("What is your robot's name?"),
+  health: 100,
+  attack: 10,
+  money: 10
+};
+
+var enemyInfo = [
+  {
+    name: "Roborto",
+    attack: randomNumber(10,14)
+  },
+  {
+    name: "Amy Android",
+    attack: randomNumber(10,14)
+  },
+  {
+    name: "Robo Trumble",
+    attack: randomNumber(10,14)
+  }
+];
 
   // play again
   startGame();
